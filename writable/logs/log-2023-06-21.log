@@ -1,0 +1,68 @@
+INFO - 2023-06-21 09:28:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 09:28:44 --> CSRF token verified.
+INFO - 2023-06-21 10:13:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 10:13:34 --> CSRF token verified.
+ERROR - 2023-06-21 10:13:34 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`r53_ci`.`images`, CONSTRAINT `images_product_id_foreign` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`)) in E:\xampp\htdocs\codeignater\admin\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeignater\admin\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `pr...', 0)
+#1 E:\xampp\htdocs\codeignater\admin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 E:\xampp\htdocs\codeignater\admin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 E:\xampp\htdocs\codeignater\admin\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 E:\xampp\htdocs\codeignater\admin\app\Controllers\Admin\ProductController.php(137): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 E:\xampp\htdocs\codeignater\admin\system\CodeIgniter.php(934): App\Controllers\Admin\ProductController->delete()
+#6 E:\xampp\htdocs\codeignater\admin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProductController))
+#7 E:\xampp\htdocs\codeignater\admin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeignater\admin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-21 10:13:34 --> Cannot delete or update a parent row: a foreign key constraint fails (`r53_ci`.`images`, CONSTRAINT `images_product_id_foreign` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `products`
+WHERE `id` = \'26\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `products`
+WHERE `id` = \'26\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `products`
+WHERE `id` = \'26\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH\Controllers\Admin\ProductController.php(137): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\ProductController->delete()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-21 10:14:56 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('admin/product/delete', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-21 10:15:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-21 10:15:39 --> CSRF token verified.
+ERROR - 2023-06-21 10:15:39 --> mysqli_sql_exception: Cannot delete or update a parent row: a foreign key constraint fails (`r53_ci`.`images`, CONSTRAINT `images_product_id_foreign` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`)) in E:\xampp\htdocs\codeignater\admin\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeignater\admin\system\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `pr...', 0)
+#1 E:\xampp\htdocs\codeignater\admin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 E:\xampp\htdocs\codeignater\admin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 E:\xampp\htdocs\codeignater\admin\system\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 E:\xampp\htdocs\codeignater\admin\app\Controllers\Admin\ProductController.php(137): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 E:\xampp\htdocs\codeignater\admin\system\CodeIgniter.php(934): App\Controllers\Admin\ProductController->delete()
+#6 E:\xampp\htdocs\codeignater\admin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProductController))
+#7 E:\xampp\htdocs\codeignater\admin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeignater\admin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-21 10:15:39 --> Cannot delete or update a parent row: a foreign key constraint fails (`r53_ci`.`images`, CONSTRAINT `images_product_id_foreign` FOREIGN KEY (`product_id`) REFERENCES `products` (`id`))
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('DELETE FROM `products`
+WHERE `id` = \'26\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `products`
+WHERE `id` = \'26\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `products`
+WHERE `id` = \'26\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `id` = :id:', [...], false)
+ 5 APPPATH\Controllers\Admin\ProductController.php(137): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\ProductController->delete()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,282 @@
+ERROR - 2023-07-06 05:35:00 --> mysqli_sql_exception: Unknown column 'order_details.product_id' in 'on clause' in E:\xampp\htdocs\codeignater\admin\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeignater\admin\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `myorder...', 0)
+#1 E:\xampp\htdocs\codeignater\admin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `myorder...')
+#2 E:\xampp\htdocs\codeignater\admin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `myorder...')
+#3 E:\xampp\htdocs\codeignater\admin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `myorder...', Array, false)
+#4 E:\xampp\htdocs\codeignater\admin\app\Controllers\Admin\OrderController.php(56): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\codeignater\admin\system\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('22')
+#6 E:\xampp\htdocs\codeignater\admin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+#7 E:\xampp\htdocs\codeignater\admin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeignater\admin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-06 05:35:00 --> Unknown column 'order_details.product_id' in 'on clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `myorder`.*, `customers`.`name` as `cname`, `order_details`.*, `products`.`name`
+FROM `myorder`
+INNER JOIN `customers` ON `customers`.`id` = `myorder`.`customer_id`
+INNER JOIN `products` ON `products`.`id` = `order_details`.`product_id`
+INNER JOIN `order_details` ON `order_details`.`order_id` = `myorder`.`id`
+WHERE `myorder`.`id` = \'22\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `myorder`.*, `customers`.`name` as `cname`, `order_details`.*, `products`.`name`
+FROM `myorder`
+INNER JOIN `customers` ON `customers`.`id` = `myorder`.`customer_id`
+INNER JOIN `products` ON `products`.`id` = `order_details`.`product_id`
+INNER JOIN `order_details` ON `order_details`.`order_id` = `myorder`.`id`
+WHERE `myorder`.`id` = \'22\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `myorder`.*, `customers`.`name` as `cname`, `order_details`.*, `products`.`name`
+FROM `myorder`
+INNER JOIN `customers` ON `customers`.`id` = `myorder`.`customer_id`
+INNER JOIN `products` ON `products`.`id` = `order_details`.`product_id`
+INNER JOIN `order_details` ON `order_details`.`order_id` = `myorder`.`id`
+WHERE `myorder`.`id` = \'22\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `myorder`.*, `customers`.`name` as `cname`, `order_details`.*, `products`.`name`
+FROM `myorder`
+INNER JOIN `customers` ON `customers`.`id` = `myorder`.`customer_id`
+INNER JOIN `products` ON `products`.`id` = `order_details`.`product_id`
+INNER JOIN `order_details` ON `order_details`.`order_id` = `myorder`.`id`
+WHERE `myorder`.`id` = :myorder.id:', [...], false)
+ 5 APPPATH\Controllers\Admin\OrderController.php(56): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('22')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-06 05:36:10 --> mysqli_sql_exception: Unknown column 'myorder.id' in 'where clause' in E:\xampp\htdocs\codeignater\admin\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeignater\admin\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *\nFROM `...', 0)
+#1 E:\xampp\htdocs\codeignater\admin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 E:\xampp\htdocs\codeignater\admin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 E:\xampp\htdocs\codeignater\admin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xampp\htdocs\codeignater\admin\app\Controllers\Admin\OrderController.php(57): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\codeignater\admin\system\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('22')
+#6 E:\xampp\htdocs\codeignater\admin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+#7 E:\xampp\htdocs\codeignater\admin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeignater\admin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-06 05:36:10 --> Unknown column 'myorder.id' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT *
+FROM `order_details`
+INNER JOIN `products` ON `products`.`id` = `order_details`.`product_id`
+WHERE `myorder`.`id` = \'22\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `order_details`
+INNER JOIN `products` ON `products`.`id` = `order_details`.`product_id`
+WHERE `myorder`.`id` = \'22\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `order_details`
+INNER JOIN `products` ON `products`.`id` = `order_details`.`product_id`
+WHERE `myorder`.`id` = \'22\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `order_details`
+INNER JOIN `products` ON `products`.`id` = `order_details`.`product_id`
+WHERE `myorder`.`id` = :myorder.id:', [...], false)
+ 5 APPPATH\Controllers\Admin\OrderController.php(57): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('22')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-06 05:40:21 --> mysqli_sql_exception: Unknown column 'products.name' in 'field list' in E:\xampp\htdocs\codeignater\admin\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeignater\admin\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `myorder...', 0)
+#1 E:\xampp\htdocs\codeignater\admin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `myorder...')
+#2 E:\xampp\htdocs\codeignater\admin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `myorder...')
+#3 E:\xampp\htdocs\codeignater\admin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `myorder...', Array, false)
+#4 E:\xampp\htdocs\codeignater\admin\app\Controllers\Admin\OrderController.php(54): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\codeignater\admin\system\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('22')
+#6 E:\xampp\htdocs\codeignater\admin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+#7 E:\xampp\htdocs\codeignater\admin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeignater\admin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-06 05:40:21 --> Unknown column 'products.name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `myorder`.*, `customers`.`name` as `cname`, `order_details`.*, `products`.`name`
+FROM `myorder`
+INNER JOIN `customers` ON `customers`.`id` = `myorder`.`customer_id`
+INNER JOIN `order_details` ON `order_details`.`order_id` = `myorder`.`id`
+WHERE `myorder`.`id` = \'22\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `myorder`.*, `customers`.`name` as `cname`, `order_details`.*, `products`.`name`
+FROM `myorder`
+INNER JOIN `customers` ON `customers`.`id` = `myorder`.`customer_id`
+INNER JOIN `order_details` ON `order_details`.`order_id` = `myorder`.`id`
+WHERE `myorder`.`id` = \'22\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `myorder`.*, `customers`.`name` as `cname`, `order_details`.*, `products`.`name`
+FROM `myorder`
+INNER JOIN `customers` ON `customers`.`id` = `myorder`.`customer_id`
+INNER JOIN `order_details` ON `order_details`.`order_id` = `myorder`.`id`
+WHERE `myorder`.`id` = \'22\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `myorder`.*, `customers`.`name` as `cname`, `order_details`.*, `products`.`name`
+FROM `myorder`
+INNER JOIN `customers` ON `customers`.`id` = `myorder`.`customer_id`
+INNER JOIN `order_details` ON `order_details`.`order_id` = `myorder`.`id`
+WHERE `myorder`.`id` = :myorder.id:', [...], false)
+ 5 APPPATH\Controllers\Admin\OrderController.php(54): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('22')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-06 05:43:48 --> Cannot access offset of type string on string
+in APPPATH\Views\admin\order\details.php on line 149.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/order/details', [], true)
+ 4 APPPATH\Controllers\Admin\OrderController.php(64): view('admin/order/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('22')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-06 06:03:44 --> json_decode(): Argument #1 ($json) must be of type string, array given
+in APPPATH\Views\admin\order\details.php on line 145.
+ 1 APPPATH\Views\admin\order\details.php(145): json_decode([...], true)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeignater\\admin\\app\\Views\\admin\\order\\details.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/order/details', [], true)
+ 5 APPPATH\Controllers\Admin\OrderController.php(66): view('admin/order/details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('22')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-07-06 06:23:36 --> mysqli_sql_exception: Unknown column 'products.name' in 'field list' in E:\xampp\htdocs\codeignater\admin\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeignater\admin\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `order_d...', 0)
+#1 E:\xampp\htdocs\codeignater\admin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `order_d...')
+#2 E:\xampp\htdocs\codeignater\admin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `order_d...')
+#3 E:\xampp\htdocs\codeignater\admin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `order_d...', Array, false)
+#4 E:\xampp\htdocs\codeignater\admin\app\Controllers\Admin\OrderController.php(65): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\codeignater\admin\system\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('22')
+#6 E:\xampp\htdocs\codeignater\admin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+#7 E:\xampp\htdocs\codeignater\admin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeignater\admin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-06 06:23:36 --> Unknown column 'products.name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `order_details`.*, `products`.`name` as `pname`, `products`.`price` as `pprice`
+FROM `order_details`
+WHERE `order_details`.`order_id` = \'22\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `order_details`.*, `products`.`name` as `pname`, `products`.`price` as `pprice`
+FROM `order_details`
+WHERE `order_details`.`order_id` = \'22\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `order_details`.*, `products`.`name` as `pname`, `products`.`price` as `pprice`
+FROM `order_details`
+WHERE `order_details`.`order_id` = \'22\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `order_details`.*, `products`.`name` as `pname`, `products`.`price` as `pprice`
+FROM `order_details`
+WHERE `order_details`.`order_id` = :order_details.order_id:', [...], false)
+ 5 APPPATH\Controllers\Admin\OrderController.php(65): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('22')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-06 06:33:15 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\order\details.php on line 11.
+ 1 APPPATH\Views\admin\order\details.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'E:\\xampp\\htdocs\\codeignater\\admin\\app\\Views\\admin\\order\\details.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeignater\\admin\\app\\Views\\admin\\order\\details.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/order/details', [], true)
+ 5 APPPATH\Controllers\Admin\OrderController.php(70): view('admin/order/details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-06 06:33:23 --> Trying to access array offset on value of type null
+in APPPATH\Views\admin\order\details.php on line 11.
+ 1 APPPATH\Views\admin\order\details.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'E:\\xampp\\htdocs\\codeignater\\admin\\app\\Views\\admin\\order\\details.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeignater\\admin\\app\\Views\\admin\\order\\details.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/order/details', [], true)
+ 5 APPPATH\Controllers\Admin\OrderController.php(70): view('admin/order/details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-06 06:35:18 --> Undefined variable $info
+in APPPATH\Views\admin\order\details.php on line 11.
+ 1 APPPATH\Views\admin\order\details.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $info', 'E:\\xampp\\htdocs\\codeignater\\admin\\app\\Views\\admin\\order\\details.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeignater\\admin\\app\\Views\\admin\\order\\details.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/order/details', [...], true)
+ 5 APPPATH\Controllers\Admin\OrderController.php(70): view('admin/order/details', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-06 06:36:47 --> Undefined variable $info
+in APPPATH\Views\admin\order\details.php on line 11.
+ 1 APPPATH\Views\admin\order\details.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $info', 'E:\\xampp\\htdocs\\codeignater\\admin\\app\\Views\\admin\\order\\details.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeignater\\admin\\app\\Views\\admin\\order\\details.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/order/details', [...], true)
+ 5 APPPATH\Controllers\Admin\OrderController.php(70): view('admin/order/details', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-06 06:37:21 --> Undefined variable $info
+in APPPATH\Views\admin\order\details.php on line 11.
+ 1 APPPATH\Views\admin\order\details.php(11): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $info', 'E:\\xampp\\htdocs\\codeignater\\admin\\app\\Views\\admin\\order\\details.php', 11)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeignater\\admin\\app\\Views\\admin\\order\\details.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/order/details', [...], true)
+ 5 APPPATH\Controllers\Admin\OrderController.php(72): view('admin/order/details', [...], [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-06 07:10:45 --> CSRF token verified.
+CRITICAL - 2023-07-06 07:10:50 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('admin/order/delete', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-06 07:10:55 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('admin/order/delete', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-06 07:11:04 --> CSRF token verified.
+INFO - 2023-07-06 07:11:15 --> CSRF token verified.
+INFO - 2023-07-06 07:11:53 --> CSRF token verified.
+INFO - 2023-07-06 07:12:33 --> CSRF token verified.
+CRITICAL - 2023-07-06 07:12:37 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('admin/order/delete', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-06 07:12:40 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('admin/order/delete', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-06 07:12:52 --> CSRF token verified.
+CRITICAL - 2023-07-06 07:12:57 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('admin/order/delete', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-06 07:13:13 --> CSRF token verified.
+CRITICAL - 2023-07-06 07:13:17 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('admin/order/delete', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-06 07:13:23 --> CSRF token verified.
+INFO - 2023-07-06 07:13:33 --> CSRF token verified.
+INFO - 2023-07-06 07:13:40 --> CSRF token verified.

@@ -1,0 +1,294 @@
+CRITICAL - 2023-06-18 05:25:34 --> Invalid file: "registration.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('registration.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('registration', [], true)
+ 3 APPPATH\Controllers\Auth.php(27): view('registration', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-18 05:26:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 05:26:03 --> Invalid file: "registration.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('registration.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('registration', [], true)
+ 3 APPPATH\Controllers\Auth.php(27): view('registration', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-18 05:26:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 05:26:21 --> Invalid file: "registration.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('registration.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('registration', [], true)
+ 3 APPPATH\Controllers\Auth.php(27): view('registration', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-18 05:26:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 05:26:23 --> Invalid file: "registration.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('registration.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('registration', [], true)
+ 3 APPPATH\Controllers\Auth.php(27): view('registration', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-18 05:26:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 05:26:23 --> Invalid file: "registration.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('registration.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('registration', [], true)
+ 3 APPPATH\Controllers\Auth.php(27): view('registration', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-18 05:26:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 05:26:23 --> Invalid file: "registration.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('registration.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('registration', [], true)
+ 3 APPPATH\Controllers\Auth.php(27): view('registration', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->login()
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-18 05:26:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 05:27:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 05:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 05:28:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 05:29:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 05:31:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 05:31:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 05:32:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 05:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 05:37:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 05:39:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 05:42:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 05:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 05:49:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 05:56:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 05:58:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 05:59:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 05:59:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 06:00:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 06:01:04 --> CSRF token verified.
+INFO - 2023-06-18 06:01:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 06:01:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 06:04:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 06:06:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 06:07:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 06:07:10 --> CSRF token verified.
+INFO - 2023-06-18 06:07:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-06-18 06:08:14 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-18 06:09:00 --> The action you requested is not allowed.
+in SYSTEMPATH\Security\Security.php on line 306.
+ 1 SYSTEMPATH\Security\Security.php(306): CodeIgniter\Security\Exceptions\SecurityException::forDisallowedAction()
+ 2 SYSTEMPATH\Filters\CSRF.php(55): CodeIgniter\Security\Security->verify(Object(CodeIgniter\HTTP\IncomingRequest))
+ 3 SYSTEMPATH\Filters\Filters.php(173): CodeIgniter\Filters\CSRF->before(Object(CodeIgniter\HTTP\IncomingRequest), null)
+ 4 SYSTEMPATH\CodeIgniter.php(473): CodeIgniter\Filters\Filters->run('login', 'before')
+ 5 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-18 06:09:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 06:09:06 --> CSRF token verified.
+INFO - 2023-06-18 06:09:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 06:37:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 06:38:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 09:03:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 09:04:23 --> CSRF token verified.
+INFO - 2023-06-18 09:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-18 09:04:24 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'r53_ci' in E:\xampp\htdocs\R53\codeigniter\admin\system\Database\MySQLi\Connection.php:173
+Stack trace:
+#0 E:\xampp\htdocs\R53\codeigniter\admin\system\Database\MySQLi\Connection.php(173): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'r53_ci', 3306, '', 0)
+#1 E:\xampp\htdocs\R53\codeigniter\admin\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\xampp\htdocs\R53\codeigniter\admin\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\xampp\htdocs\R53\codeigniter\admin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\xampp\htdocs\R53\codeigniter\admin\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\R53\codeigniter\admin\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#6 E:\xampp\htdocs\R53\codeigniter\admin\app\Controllers\Auth.php(42): CodeIgniter\BaseModel->first()
+#7 E:\xampp\htdocs\R53\codeigniter\admin\system\CodeIgniter.php(934): App\Controllers\Auth->login()
+#8 E:\xampp\htdocs\R53\codeigniter\admin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#9 E:\xampp\htdocs\R53\codeigniter\admin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\xampp\htdocs\R53\codeigniter\admin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'r53_ci' in E:\xampp\htdocs\R53\codeigniter\admin\system\Database\MySQLi\Connection.php:218
+Stack trace:
+#0 E:\xampp\htdocs\R53\codeigniter\admin\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\xampp\htdocs\R53\codeigniter\admin\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\xampp\htdocs\R53\codeigniter\admin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\xampp\htdocs\R53\codeigniter\admin\system\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\xampp\htdocs\R53\codeigniter\admin\system\BaseModel.php(656): CodeIgniter\Model->doFirst()
+#5 E:\xampp\htdocs\R53\codeigniter\admin\app\Controllers\Auth.php(42): CodeIgniter\BaseModel->first()
+#6 E:\xampp\htdocs\R53\codeigniter\admin\system\CodeIgniter.php(934): App\Controllers\Auth->login()
+#7 E:\xampp\htdocs\R53\codeigniter\admin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+#8 E:\xampp\htdocs\R53\codeigniter\admin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\xampp\htdocs\R53\codeigniter\admin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#10 {main}
+CRITICAL - 2023-06-18 09:04:24 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'r53_ci'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `users`
+WHERE `email` = :email:
+ LIMIT 1', [...], false)
+ 3 SYSTEMPATH\Model.php(268): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(656): CodeIgniter\Model->doFirst()
+ 5 APPPATH\Controllers\Auth.php(42): CodeIgniter\BaseModel->first()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Auth->login()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Auth))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-06-18 09:05:31 --> CSRF token verified.
+INFO - 2023-06-18 09:05:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 09:05:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 09:05:33 --> CSRF token verified.
+INFO - 2023-06-18 09:05:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 09:05:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 09:07:32 --> CSRF token verified.
+INFO - 2023-06-18 09:07:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 09:07:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 09:07:38 --> CSRF token verified.
+INFO - 2023-06-18 09:07:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 09:09:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-06-18 09:09:45 --> CSRF token verified.
+INFO - 2023-06-18 09:09:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-06-18 17:09:51 --> mysqli_sql_exception: Table 'r53_ci.products' doesn't exist in E:\xampp\htdocs\codeignater\admin\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeignater\admin\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `product...', 0)
+#1 E:\xampp\htdocs\codeignater\admin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product...')
+#2 E:\xampp\htdocs\codeignater\admin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product...')
+#3 E:\xampp\htdocs\codeignater\admin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product...', Array, false)
+#4 E:\xampp\htdocs\codeignater\admin\app\Controllers\Admin\ProductController.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\codeignater\admin\system\CodeIgniter.php(934): App\Controllers\Admin\ProductController->all()
+#6 E:\xampp\htdocs\codeignater\admin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProductController))
+#7 E:\xampp\htdocs\codeignater\admin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeignater\admin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-18 17:09:51 --> Table 'r53_ci.products' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `products`.*, `categories`.`name` as `catname`, `subcategories`.`name` as `subcatname`
+FROM `products`
+INNER JOIN `categories` ON `categories`.`id` = `products`.`category_id`
+INNER JOIN `subcategories` ON `subcategories`.`id` = `products`.`subcategory_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `products`.*, `categories`.`name` as `catname`, `subcategories`.`name` as `subcatname`
+FROM `products`
+INNER JOIN `categories` ON `categories`.`id` = `products`.`category_id`
+INNER JOIN `subcategories` ON `subcategories`.`id` = `products`.`subcategory_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `products`.*, `categories`.`name` as `catname`, `subcategories`.`name` as `subcatname`
+FROM `products`
+INNER JOIN `categories` ON `categories`.`id` = `products`.`category_id`
+INNER JOIN `subcategories` ON `subcategories`.`id` = `products`.`subcategory_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `products`.*, `categories`.`name` as `catname`, `subcategories`.`name` as `subcatname`
+FROM `products`
+INNER JOIN `categories` ON `categories`.`id` = `products`.`category_id`
+INNER JOIN `subcategories` ON `subcategories`.`id` = `products`.`subcategory_id`', [], false)
+ 5 APPPATH\Controllers\Admin\ProductController.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\ProductController->all()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-18 17:10:59 --> mysqli_sql_exception: Table 'r53_ci.products' doesn't exist in E:\xampp\htdocs\codeignater\admin\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeignater\admin\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `product...', 0)
+#1 E:\xampp\htdocs\codeignater\admin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product...')
+#2 E:\xampp\htdocs\codeignater\admin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product...')
+#3 E:\xampp\htdocs\codeignater\admin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product...', Array, false)
+#4 E:\xampp\htdocs\codeignater\admin\app\Controllers\Admin\ProductController.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\codeignater\admin\system\CodeIgniter.php(934): App\Controllers\Admin\ProductController->all()
+#6 E:\xampp\htdocs\codeignater\admin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProductController))
+#7 E:\xampp\htdocs\codeignater\admin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeignater\admin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-18 17:10:59 --> Table 'r53_ci.products' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `products`.*, `categories`.`name` as `catname`, `subcategories`.`name` as `subcatname`
+FROM `products`
+INNER JOIN `categories` ON `categories`.`id` = `products`.`category_id`
+INNER JOIN `subcategories` ON `subcategories`.`id` = `products`.`subcategory_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `products`.*, `categories`.`name` as `catname`, `subcategories`.`name` as `subcatname`
+FROM `products`
+INNER JOIN `categories` ON `categories`.`id` = `products`.`category_id`
+INNER JOIN `subcategories` ON `subcategories`.`id` = `products`.`subcategory_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `products`.*, `categories`.`name` as `catname`, `subcategories`.`name` as `subcatname`
+FROM `products`
+INNER JOIN `categories` ON `categories`.`id` = `products`.`category_id`
+INNER JOIN `subcategories` ON `subcategories`.`id` = `products`.`subcategory_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `products`.*, `categories`.`name` as `catname`, `subcategories`.`name` as `subcatname`
+FROM `products`
+INNER JOIN `categories` ON `categories`.`id` = `products`.`category_id`
+INNER JOIN `subcategories` ON `subcategories`.`id` = `products`.`subcategory_id`', [], false)
+ 5 APPPATH\Controllers\Admin\ProductController.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\ProductController->all()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-06-18 17:13:28 --> mysqli_sql_exception: Table 'r53_ci.products' doesn't exist in E:\xampp\htdocs\codeignater\admin\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeignater\admin\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `product...', 0)
+#1 E:\xampp\htdocs\codeignater\admin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `product...')
+#2 E:\xampp\htdocs\codeignater\admin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `product...')
+#3 E:\xampp\htdocs\codeignater\admin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `product...', Array, false)
+#4 E:\xampp\htdocs\codeignater\admin\app\Controllers\Admin\ProductController.php(31): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\codeignater\admin\system\CodeIgniter.php(934): App\Controllers\Admin\ProductController->all()
+#6 E:\xampp\htdocs\codeignater\admin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProductController))
+#7 E:\xampp\htdocs\codeignater\admin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeignater\admin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-06-18 17:13:28 --> Table 'r53_ci.products' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `products`.*, `categories`.`name` as `catname`, `subcategories`.`name` as `subcatname`
+FROM `products`
+INNER JOIN `categories` ON `categories`.`id` = `products`.`category_id`
+INNER JOIN `subcategories` ON `subcategories`.`id` = `products`.`subcategory_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `products`.*, `categories`.`name` as `catname`, `subcategories`.`name` as `subcatname`
+FROM `products`
+INNER JOIN `categories` ON `categories`.`id` = `products`.`category_id`
+INNER JOIN `subcategories` ON `subcategories`.`id` = `products`.`subcategory_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `products`.*, `categories`.`name` as `catname`, `subcategories`.`name` as `subcatname`
+FROM `products`
+INNER JOIN `categories` ON `categories`.`id` = `products`.`category_id`
+INNER JOIN `subcategories` ON `subcategories`.`id` = `products`.`subcategory_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `products`.*, `categories`.`name` as `catname`, `subcategories`.`name` as `subcatname`
+FROM `products`
+INNER JOIN `categories` ON `categories`.`id` = `products`.`category_id`
+INNER JOIN `subcategories` ON `subcategories`.`id` = `products`.`subcategory_id`', [], false)
+ 5 APPPATH\Controllers\Admin\ProductController.php(31): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\ProductController->all()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-18 18:00:27 --> Undefined variable $cats
+in APPPATH\Views\admin\product\all.php on line 22.
+ 1 APPPATH\Views\admin\product\all.php(22): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $cats', 'E:\\xampp\\htdocs\\codeignater\\admin\\app\\Views\\admin\\product\\all.php', 22)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeignater\\admin\\app\\Views\\admin\\product\\all.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/product/all', [], true)
+ 5 APPPATH\Controllers\Admin\ProductController.php(21): view('admin/product/all')
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-06-18 18:16:04 --> Undefined variable $subcats
+in APPPATH\Views\admin\product\all.php on line 34.
+ 1 APPPATH\Views\admin\product\all.php(34): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $subcats', 'E:\\xampp\\htdocs\\codeignater\\admin\\app\\Views\\admin\\product\\all.php', 34)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeignater\\admin\\app\\Views\\admin\\product\\all.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/product/all', [], true)
+ 5 APPPATH\Controllers\Admin\ProductController.php(34): view('admin/product/all', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()

@@ -1,0 +1,292 @@
+INFO - 2023-07-03 10:54:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 10:56:26 --> CSRF token verified.
+INFO - 2023-07-03 10:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 11:57:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 12:01:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 12:33:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 12:33:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 12:35:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 12:36:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-07-03 12:43:52 --> mysqli_sql_exception: Unknown column 'customer.name' in 'field list' in E:\xampp\htdocs\codeignater\admin\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\xampp\htdocs\codeignater\admin\system\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `myorder...', 0)
+#1 E:\xampp\htdocs\codeignater\admin\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `myorder...')
+#2 E:\xampp\htdocs\codeignater\admin\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `myorder...')
+#3 E:\xampp\htdocs\codeignater\admin\system\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `myorder...', Array, false)
+#4 E:\xampp\htdocs\codeignater\admin\app\Controllers\Admin\OrderController.php(41): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\xampp\htdocs\codeignater\admin\system\CodeIgniter.php(934): App\Controllers\Admin\OrderController->all()
+#6 E:\xampp\htdocs\codeignater\admin\system\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+#7 E:\xampp\htdocs\codeignater\admin\system\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 E:\xampp\htdocs\codeignater\admin\public\index.php(67): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-07-03 12:43:52 --> Unknown column 'customer.name' in 'field list'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 295.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(295): mysqli->query('SELECT `myorder`.*, `customer`.`name` as `cname`
+FROM `myorder`
+INNER JOIN `customers` ON `customer`.`id` = `myorder`.`customer_id`', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT `myorder`.*, `customer`.`name` as `cname`
+FROM `myorder`
+INNER JOIN `customers` ON `customer`.`id` = `myorder`.`customer_id`')
+ 3 SYSTEMPATH\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT `myorder`.*, `customer`.`name` as `cname`
+FROM `myorder`
+INNER JOIN `customers` ON `customer`.`id` = `myorder`.`customer_id`')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1616): CodeIgniter\Database\BaseConnection->query('SELECT `myorder`.*, `customer`.`name` as `cname`
+FROM `myorder`
+INNER JOIN `customers` ON `customer`.`id` = `myorder`.`customer_id`', [], false)
+ 5 APPPATH\Controllers\Admin\OrderController.php(41): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->all()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-03 13:02:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-03 13:09:53 --> Invalid file: "details.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('details.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('details', [], true)
+ 3 APPPATH\Controllers\Admin\OrderController.php(59): view('details', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 13:11:48 --> Invalid file: "details.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('details.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('details', [], true)
+ 3 APPPATH\Controllers\Admin\OrderController.php(59): view('details', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('1')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 13:11:53 --> Invalid file: "details.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('details.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('details', [], true)
+ 3 APPPATH\Controllers\Admin\OrderController.php(59): view('details', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('2')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 13:41:58 --> Invalid file: "details.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('details.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('details', [], true)
+ 3 APPPATH\Controllers\Admin\OrderController.php(59): view('details', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('2')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 13:42:23 --> Invalid file: "details.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('details.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('details', [], true)
+ 3 APPPATH\Controllers\Admin\OrderController.php(59): view('details', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('2')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 13:45:55 --> Invalid file: "details.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('details.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('details', [], true)
+ 3 APPPATH\Controllers\Admin\OrderController.php(59): view('details', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('2')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 13:47:24 --> Invalid file: "details.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('details.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('details', [], true)
+ 3 APPPATH\Controllers\Admin\OrderController.php(59): view('details', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('2')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 13:47:57 --> Invalid file: "details.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('details.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('details', [], true)
+ 3 APPPATH\Controllers\Admin\OrderController.php(59): view('details', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('2')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 13:48:35 --> Invalid file: "admin/details.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 33.
+ 1 SYSTEMPATH\View\View.php(201): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('admin/details.php')
+ 2 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/details', [], true)
+ 3 APPPATH\Controllers\Admin\OrderController.php(59): view('admin/details', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('2')
+ 5 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 6 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 13:48:58 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\admin\order\details.php on line 2.
+ 1 APPPATH\Views\admin\order\details.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'E:\\xampp\\htdocs\\codeignater\\admin\\app\\Views\\admin\\order\\details.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeignater\\admin\\app\\Views\\admin\\order\\details.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/order/details', [], true)
+ 5 APPPATH\Controllers\Admin\OrderController.php(59): view('admin/order/details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 13:51:35 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\admin\order\details.php on line 2.
+ 1 APPPATH\Views\admin\order\details.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'E:\\xampp\\htdocs\\codeignater\\admin\\app\\Views\\admin\\order\\details.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeignater\\admin\\app\\Views\\admin\\order\\details.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/order/details', [], true)
+ 5 APPPATH\Controllers\Admin\OrderController.php(59): view('admin/order/details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 13:51:38 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\admin\order\details.php on line 2.
+ 1 APPPATH\Views\admin\order\details.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'E:\\xampp\\htdocs\\codeignater\\admin\\app\\Views\\admin\\order\\details.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeignater\\admin\\app\\Views\\admin\\order\\details.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/order/details', [], true)
+ 5 APPPATH\Controllers\Admin\OrderController.php(59): view('admin/order/details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 13:51:38 --> foreach() argument must be of type array|object, null given
+in APPPATH\Views\admin\order\details.php on line 2.
+ 1 APPPATH\Views\admin\order\details.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'foreach() argument must be of type array|object, null given', 'E:\\xampp\\htdocs\\codeignater\\admin\\app\\Views\\admin\\order\\details.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeignater\\admin\\app\\Views\\admin\\order\\details.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/order/details', [], true)
+ 5 APPPATH\Controllers\Admin\OrderController.php(59): view('admin/order/details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('2')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 13:52:02 --> Cannot access offset of type string on string
+in APPPATH\Views\admin\order\details.php on line 3.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/order/details', [], true)
+ 4 APPPATH\Controllers\Admin\OrderController.php(59): view('admin/order/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 13:52:20 --> Cannot access offset of type string on string
+in APPPATH\Views\admin\order\details.php on line 3.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/order/details', [], true)
+ 4 APPPATH\Controllers\Admin\OrderController.php(59): view('admin/order/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 15:30:50 --> Cannot access offset of type string on string
+in APPPATH\Views\admin\order\details.php on line 3.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/order/details', [], true)
+ 4 APPPATH\Controllers\Admin\OrderController.php(62): view('admin/order/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 15:32:26 --> Cannot access offset of type string on string
+in APPPATH\Views\admin\order\details.php on line 4.
+ 1 [internal function]: compareTotal('1', '2')
+ 2 APPPATH\Views\admin\order\details.php(11): usort([...], 'compareTotal')
+ 3 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeignater\\admin\\app\\Views\\admin\\order\\details.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/order/details', [], true)
+ 6 APPPATH\Controllers\Admin\OrderController.php(62): view('admin/order/details', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('1')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 15:36:39 --> Cannot access offset of type string on string
+in APPPATH\Views\admin\order\details.php on line 3.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/order/details', [], true)
+ 4 APPPATH\Controllers\Admin\OrderController.php(62): view('admin/order/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 15:36:56 --> Cannot access offset of type string on string
+in APPPATH\Views\admin\order\details.php on line 3.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/order/details', [], true)
+ 4 APPPATH\Controllers\Admin\OrderController.php(62): view('admin/order/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 15:38:48 --> Undefined variable $product
+in APPPATH\Views\admin\order\details.php on line 2.
+ 1 APPPATH\Views\admin\order\details.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $product', 'E:\\xampp\\htdocs\\codeignater\\admin\\app\\Views\\admin\\order\\details.php', 2)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeignater\\admin\\app\\Views\\admin\\order\\details.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/order/details', [], true)
+ 5 APPPATH\Controllers\Admin\OrderController.php(62): view('admin/order/details', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('1')
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 15:38:58 --> Cannot access offset of type string on string
+in APPPATH\Views\admin\order\details.php on line 4.
+ 1 SYSTEMPATH\View\View.php(213): include()
+ 2 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/order/details', [], true)
+ 4 APPPATH\Controllers\Admin\OrderController.php(62): view('admin/order/details', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('1')
+ 6 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 7 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 15:41:26 --> Cannot access offset of type string on string
+in APPPATH\Views\admin\order\details.php on line 3.
+ 1 [internal function]: CodeIgniter\View\View->{closure}('1', '2')
+ 2 APPPATH\Views\admin\order\details.php(4): usort([...], Object(Closure))
+ 3 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeignater\\admin\\app\\Views\\admin\\order\\details.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/order/details', [], true)
+ 6 APPPATH\Controllers\Admin\OrderController.php(62): view('admin/order/details', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('1')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-07-03 15:42:43 --> Cannot access offset of type string on string
+in APPPATH\Views\admin\order\details.php on line 4.
+ 1 [internal function]: CodeIgniter\View\View->{closure}('1', '2')
+ 2 APPPATH\Views\admin\order\details.php(5): usort([...], Object(Closure))
+ 3 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeignater\\admin\\app\\Views\\admin\\order\\details.php')
+ 4 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 5 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/order/details', [], true)
+ 6 APPPATH\Controllers\Admin\OrderController.php(62): view('admin/order/details', [...])
+ 7 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->details('1')
+ 8 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 9 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+INFO - 2023-07-03 15:57:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:58:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 15:59:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 16:00:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 16:00:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 16:01:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 16:01:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-07-03 16:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-07-03 16:24:17 --> Undefined variable $row
+in APPPATH\Views\admin\order\all.php on line 59.
+ 1 APPPATH\Views\admin\order\all.php(59): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $row', 'E:\\xampp\\htdocs\\codeignater\\admin\\app\\Views\\admin\\order\\all.php', 59)
+ 2 SYSTEMPATH\View\View.php(213): include('E:\\xampp\\htdocs\\codeignater\\admin\\app\\Views\\admin\\order\\all.php')
+ 3 SYSTEMPATH\View\View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1184): CodeIgniter\View\View->render('admin/order/all', [], true)
+ 5 APPPATH\Controllers\Admin\OrderController.php(34): view('admin/order/all', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(934): App\Controllers\Admin\OrderController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(499): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Admin\OrderController))
+ 8 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
